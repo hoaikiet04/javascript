@@ -97,7 +97,7 @@ console.log(s1.slice(-3, -1));
 
   5. replace(): Thay thế giá trị (oldValue) đầu tiên được tìm thấy trong chuỗi bằng giá trị mới (newValue).
   let newString = replace(oldValue, newValue);
-
+  thêm /g/ sau oldValue để thay thế tất cả các giá trị trong chuỗi
   6. repeat(): Lặp chuỗi count lần count: Số lần lặp lại chuỗi
   str.repeat(count);
 */
@@ -126,11 +126,20 @@ console.log(s21.includes("8"); // false
   Đúng trả về true, sai trả về false 
   startIndex (tùy chọn): Vị trí bắt đầu tìm kiếm trong chuỗi. 
   Nếu bỏ trống: tìm kiếm sẽ bắt đầu từ đầu chuỗi.
-
+  Ví dụ:
+  let s22 = "0123456789";
+  console.log(s22.startsWith("0")); // true
+  console.log(s22.startsWith("1", 1)); // true
+  console.log(s22.startsWith("1", 2)); // false
   2. endsWith(search Value, [endIndex])
   Kiểm tra chuỗi gốc có kết thúc bằng search Value không? 
   Đúng trả về true, sai trả về false 
   endIndex (tùy chọn): Vị trí kết thúc tìm kiếm trong chuỗi gốc. 
   Nếu bỏ trống: tìm kiếm đến hết chuỗi gốc
-
+  Ví dụ: 
+  let s23 = "0123456789";
+  console.log(s23.endsWith("9")); // true   
+  console.log(s23.endsWith("8", 9)); // true
+  console.log(s23.endsWith("8", 8)); // false
+  Ví dụ thực tế: Kiểm tra tên tập tin có kết thúc bằng đuôi .mp3
 */
